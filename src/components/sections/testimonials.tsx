@@ -62,7 +62,10 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <motion.div
               className="box"
-              transition={{ type: "spring", delay: index * 0.2 }}
+              transition={{
+                type: "spring",
+                delay: Number(((index + 1) * 0.1 + 0.1).toFixed(1)),
+              }}
               initial={{ opacity: 0, scale: 0 }}
               whileInView={{ opacity: 1, scale: 1 }}
               key={index}
