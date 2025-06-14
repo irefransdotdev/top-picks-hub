@@ -1,4 +1,7 @@
+"use client";
+
 import ProductCard from "../cards/product-card";
+import { useMotion } from "../providers/scroll/MotionProvider";
 
 const topProducts = [
   {
@@ -34,22 +37,45 @@ const topProducts = [
 ];
 
 const Recommendations = () => {
+  const motion = useMotion();
   return (
     <section className="text-gray-900 w-full py-5">
       <div className="px-4 gap-5 flex flex-col items-center text-center">
         <header>
-          <h2 className="text-xl text-primary font-bold">
-            Top 3 Recommended Products You Can&#39;t Miss This Month
-          </h2>
-          <p className="text-secondary">
-            Explore our top 3 best-selling and highly-rated products—carefully
-            selected to offer you the best value, quality, and customer
-            satisfaction.
-          </p>
+          <motion.div
+            className="box"
+            transition={{ type: "spring" }}
+            initial={{ opacity: 1, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+          >
+            <h2 className="text-xl text-primary font-bold">
+              Top 3 Recommended Products You Can&#39;t Miss This Month
+            </h2>
+          </motion.div>
+          <motion.div
+            className="box"
+            transition={{ type: "spring" }}
+            initial={{ opacity: 1, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+          >
+            <p className="text-secondary">
+              Explore our top 3 best-selling and highly-rated products—carefully
+              selected to offer you the best value, quality, and customer
+              satisfaction.
+            </p>
+          </motion.div>
         </header>
         <div className="flex flex-col gap-4 w-full">
           {topProducts.map((topProduct, index) => (
-            <ProductCard key={index} topProduct={topProduct} />
+            <motion.div
+              className="box"
+              transition={{ type: "spring" }}
+              initial={{ opacity: 0, y: 61 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              key={index}
+            >
+              <ProductCard topProduct={topProduct} />
+            </motion.div>
           ))}
         </div>
       </div>

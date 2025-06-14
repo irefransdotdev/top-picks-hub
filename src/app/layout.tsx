@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import ThemeProvider from "@/components/providers/theme/ThemeProvider";
+import { MotionProvider } from "@/components/providers/scroll/MotionProvider";
 
 const robotoSans = Roboto({
   subsets: ["latin"],
@@ -59,7 +60,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${robotoSans.className} antialiased`}>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <MotionProvider>{children}</MotionProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

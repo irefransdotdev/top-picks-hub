@@ -5,6 +5,7 @@ import LatestBlogs from "@/components/sections/latest-blogs";
 import Recommendations from "@/components/sections/recommendations";
 import TestimonialFeedback from "@/components/sections/testimonial-feedback";
 import Testimonials from "@/components/sections/testimonials";
+import * as motion from "motion/react-client";
 
 export default function Home() {
   return (
@@ -13,6 +14,12 @@ export default function Home() {
         <Header />
       </div>
       <main aria-label="Main Content" tabIndex={-1}>
+        <motion.div
+          className="box"
+          transition={{ type: "spring" }}
+          initial={{ opacity: 1, y: 61 }}
+          whileInView={{ opacity: 1, y: 0 }}
+        ></motion.div>
         <div className="bg-background">
           <div className="px-5 container mx-auto max-w-lg flex justify-between items-center py-5">
             <Hero />
