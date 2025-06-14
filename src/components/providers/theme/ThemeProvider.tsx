@@ -12,7 +12,6 @@ const ThemeProviderContext = createContext<ThemeProviderState>(initialState);
 const ThemeProvider = ({
   children,
   defaultTheme = { mode: "light", color: "blue" },
-  storageKey = "distort-ui-theme",
   ...props
 }: ThemeProviderProps) => {
   const [storedTheme, setStoredTheme] = useState<Theme>(defaultTheme);

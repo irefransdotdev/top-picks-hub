@@ -1,7 +1,6 @@
 import React from "react";
 import {
   Card,
-  CardAction,
   CardDescription,
   CardFooter,
   CardHeader,
@@ -32,7 +31,7 @@ const ProductCard = ({ topProduct }: ProductCardProps) => {
             <section className="text-secondary">
               <ul aria-label="Product features">
                 {topProduct.features.map((feature, index) => (
-                  <li className="flex flex-row gap-2">
+                  <li className="flex flex-row gap-2" key={index}>
                     <div className="w-5 h-5">
                       <Check aria-hidden="true" />
                     </div>
