@@ -1,4 +1,4 @@
-import React from "react";
+import TestimonialForm from "../forms/testimonial-form";
 
 const TestimonialFeedback = () => {
   return (
@@ -9,11 +9,13 @@ const TestimonialFeedback = () => {
             Share Your Experience with TopPicksHub!
           </h2>
           <p className="text-secondary">
-            We’d love to hear how TopPicksHub helped you make smarter buying
+            We&#39;d love to hear how TopPicksHub helped you make smarter buying
             decisions. Share your testimonial below:
           </p>
         </header>
-        <div>{/* Add testimonial form message here */}</div>
+        <div className="w-full">
+          <TestimonialForm />
+        </div>
       </div>
     </section>
   );
