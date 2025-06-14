@@ -13,7 +13,7 @@ const Hero = () => {
           <motion.div
             className="box"
             transition={{ type: "spring", delay: 0.1 }}
-            initial={{ opacity: 1, scale: 0 }}
+            initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
           >
             <h2 id="hero-heading" className="text-xl text-primary-foreground">
@@ -24,7 +24,7 @@ const Hero = () => {
         <motion.div
           className="box"
           transition={{ type: "spring", delay: 0.2 }}
-          initial={{ opacity: 1, scale: 0 }}
+          initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
         >
           <p className="text-4xl text-primary-foreground leading-8">
@@ -34,7 +34,7 @@ const Hero = () => {
         <motion.div
           className="box"
           transition={{ type: "spring", delay: 0.3 }}
-          initial={{ opacity: 1, scale: 0 }}
+          initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
         >
           <p className="text-primary-foreground">
