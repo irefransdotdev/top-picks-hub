@@ -10,39 +10,35 @@ import {
 import { Button } from "../ui/button";
 import { Check } from "lucide-react";
 
-const ProductCard = () => {
+interface ProductCardProps {
+  topProduct: {
+    name: string;
+    description: string;
+    features: string[];
+  };
+}
+
+const ProductCard = ({ topProduct }: ProductCardProps) => {
   return (
     <article className="w-full">
       <Card className="border-none shadow-none bg-card transition-transform duration-300 ease-in-out hover:-translate-y-2">
         <CardHeader>
           <CardTitle>
-            <h3 className="text-xl font-bold text-primary">Product #1</h3>
+            <h3 className="text-xl font-bold text-primary text-start">
+              {topProduct.name}
+            </h3>
           </CardTitle>
           <CardDescription>
             <section className="text-secondary">
-              {/* Add product image here */}
               <ul aria-label="Product features">
-                <li className="flex flex-row gap-2">
-                  <div className="w-5 h-5">
-                    <Check aria-hidden="true" />
-                  </div>
-                  <span>Affordable and high-quality</span>
-                </li>
-                <li className="flex flex-row gap-2">
-                  <div className="w-5 h-5">
-                    <Check aria-hidden="true" />
-                  </div>
-                  <span>Top-rated by users</span>
-                </li>
-                <li className="flex flex-row gap-2">
-                  <div className="w-5 h-5">
-                    <Check aria-hidden="true" />
-                  </div>
-                  <span className="text-start">
-                    Ideal for [insert niche, e.g., tech lovers, home
-                    improvement, fitness]
-                  </span>
-                </li>
+                {topProduct.features.map((feature, index) => (
+                  <li className="flex flex-row gap-2">
+                    <div className="w-5 h-5">
+                      <Check aria-hidden="true" />
+                    </div>
+                    <span>{feature}</span>
+                  </li>
+                ))}
               </ul>
             </section>
           </CardDescription>
