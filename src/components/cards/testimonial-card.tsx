@@ -1,6 +1,5 @@
 "use client";
 
-import { useMotion } from "../providers/scroll/MotionProvider";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { Card, CardDescription, CardHeader, CardTitle } from "../ui/card";
 
@@ -16,7 +15,6 @@ interface TestimonialCardProps {
 
 const TestimonialCard = ({ testimonial }: TestimonialCardProps) => {
   const { firstName, lastName, profession, title, message } = testimonial;
-  const motion = useMotion();
   return (
     <article className="w-full cursor-pointer  hover:outline hover:outline-secondary rounded-lg">
       <Card className="border-none shadow-none bg-white flex flex-col justify-center">
