@@ -11,7 +11,7 @@ interface CategoryCardProps {
 const CategoryCard = ({ title, image, icon }: CategoryCardProps) => {
   return (
     <article className="w-full h-full cursor-pointer">
-      <Card className="border-none shadow-none bg-white h-full overflow-hidden relative transition-transform duration-300 ease-in-out hover:-translate-y-2">
+      <Card className="border-none shadow-none bg-white h-full overflow-hidden relative">
         <div className="absolute inset-0 w-full h-full z-0">
           <Image
             src={image || "/globe.svg"}
