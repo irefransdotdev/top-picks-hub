@@ -2,7 +2,7 @@ import { Button } from "../ui/button";
 
 const Hero = () => {
   return (
-    <section className=" text-gray-900" aria-labelledby="hero-heading">
+    <section className=" text-gray-900 py-20" aria-labelledby="hero-heading">
       <div className="container px-4 gap-5 flex flex-col items-center text-center">
         <header>
           <h2 id="hero-heading" className="text-xl text-primary-foreground">
@@ -19,16 +19,12 @@ const Hero = () => {
           and all in one.
         </p>
         <footer className="flex flex-col w-full gap-2.5">
-          <a href="#top-picks" role="button" aria-label="Browse Top Picks">
-            <Button className="bg-button-primary w-full">
-              Browse Top Picks
-            </Button>
-          </a>
-          <a href="#categories" role="button" aria-label="Explore Categories">
-            <Button className="border border-button-primary bg-transparent w-full">
-              Explore Categories
-            </Button>
-          </a>
+          <Button className="cursor-pointer bg-button-primary w-full hover:bg-button-primary/80 hover:text-white/80">
+            Browse Top Picks
+          </Button>
+          <Button className="cursor-pointer border border-button-primary bg-transparent w-full hover:bg-button-primary/20 hover:border-button-primary/80 hover:text-white/80">
+            Explore Categories
+          </Button>
         </footer>
       </div>
     </section>
