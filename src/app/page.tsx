@@ -12,7 +12,7 @@ export default function Home() {
         <div className="bg-background px-5 container mx-auto flex justify-between items-center py-5">
           <Hero />
         </div>
-        <div className="bg-white container mx-auto flex justify-between items-center py-5">
+        <div className="bg-white px-5 container mx-auto flex justify-between items-center py-5">
           <Recommendations />
         </div>
       </main>

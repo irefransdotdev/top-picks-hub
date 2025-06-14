@@ -40,6 +40,8 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-button-primary: var(--color-button-primary);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
 }
 
 [data-theme="blue-light"] {
@@ -58,6 +60,8 @@
   --accent: hsl(240 4.8% 95.9%);
   --accent-foreground: hsl(240 5.9% 10%);
   --destructive: hsl(0 84.2% 60.2%);
+  --success: hsl(120 60% 40%);
+  --success-foreground: hsl(0 0% 98%);
   --destructive-foreground: hsl(0 0% 98%);
   --border: hsl(240 5.9% 90%);
   --input: hsl(240 5.9% 90%);

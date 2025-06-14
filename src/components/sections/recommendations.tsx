@@ -1,7 +1,9 @@
+import ProductCard from "../cards/product-card";
+
 const Recommendations = () => {
   return (
-    <section className="text-gray-900">
-      <div className="container px-4 gap-5 flex flex-col items-center text-center">
+    <section className="text-gray-900 w-full">
+      <div className="px-4 gap-5 flex flex-col items-center text-center">
         <header>
           <h2 className="text-xl text-primary font-bold">
             Top 3 Recommended Products You Can't Miss This Month
@@ -12,6 +14,9 @@ const Recommendations = () => {
             satisfaction.
           </p>
         </header>
+        {new Array(3).fill(null).map((_, index) => (
+          <ProductCard key={index} />
+        ))}
       </div>
     </section>
   );
