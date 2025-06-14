@@ -57,7 +57,7 @@ const LatestBlogs = () => {
                 className="box"
                 transition={{
                   type: "keyframes",
-                  delay: Number(((index + 1) * 0.1).toFixed(1)),
+                  delay: Number(((index + 1) * 0.1 + 0.1).toFixed(1)),
                 }}
                 initial={{ opacity: 0, scale: 0 }}
                 whileInView={{ opacity: 1, scale: 1 }}
