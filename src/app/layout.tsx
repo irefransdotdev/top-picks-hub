@@ -14,10 +14,6 @@ export const metadata: Metadata = {
   },
   description:
     "Discover honest product reviews and handpicked top picks at TopPicksHub. Find the best deals in tech, home, health, fashion, beauty, and more—trusted by smart shoppers worldwide.",
-  icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
-  },
   keywords: [
     "product reviews",
     "top picks",
