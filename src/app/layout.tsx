@@ -24,6 +24,12 @@ export const metadata: Metadata = {
     "fashion finds",
     "beauty products",
   ],
+  icons: {
+    icon: "/favicon.ico", // now points to /public/favicon.ico
+  },
+  openGraph: {
+    images: ["/opengraph-image.png"], // points to /public/opengraph-image.png
+  },
   authors: [
     {
       name: "Top Pick Hubs Team",
