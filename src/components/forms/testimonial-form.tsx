@@ -157,12 +157,14 @@ const TestimonialForm = () => {
               )}
             />
 
-            <Button
-              type="submit"
-              className="cursor-pointer bg-button-primary w-full hover:bg-button-primary/80 hover:text-white/80"
-            >
-              Submit
-            </Button>
+            <motion.div whileTap={{ scale: 0.9 }} className="w-full">
+              <Button
+                type="submit"
+                className="cursor-pointer bg-button-primary w-full hover:bg-button-primary/80 hover:text-white/80"
+              >
+                Submit
+              </Button>
+            </motion.div>
           </form>
         </motion.div>
       </motion.div>
