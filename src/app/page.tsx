@@ -12,20 +12,20 @@ export default function Home() {
       </div>
       <main aria-label="Main Content" tabIndex={-1}>
         <div className="bg-background">
-          <div className="px-5 container mx-auto flex justify-between items-center py-5">
+          <div className="px-5 container mx-auto max-w-lg flex justify-between items-center py-5">
             <Hero />
           </div>
         </div>
-        <div className="px-5 container mx-auto flex justify-between items-center py-5">
+        <div className="px-5 container mx-auto max-w-lg flex justify-between items-center py-5">
           <Recommendations />
         </div>
         <div className="bg-muted">
-          <div className="px-5 container mx-auto flex justify-between items-center py-5">
+          <div className="px-5 container mx-auto max-w-lg flex justify-between items-center py-5">
             <Categories />
           </div>
         </div>
         <div className="bg-white">
-          <div className="px-5 container mx-auto flex justify-between items-center py-5">
+          <div className="px-5 container mx-auto max-w-lg flex justify-between items-center py-5">
             <LatestBlogs />
           </div>
         </div>
