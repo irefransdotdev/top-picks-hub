@@ -13,7 +13,7 @@ import { Check } from "lucide-react";
 const ProductCard = () => {
   return (
     <article className="w-full">
-      <Card className="border-none">
+      <Card className="border-none shadow-none bg-card">
         <CardHeader>
           <CardTitle>
             <h3 className="text-xl font-bold text-primary">Product #1</h3>

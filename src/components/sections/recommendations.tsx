@@ -14,9 +14,11 @@ const Recommendations = () => {
             satisfaction.
           </p>
         </header>
-        {new Array(3).fill(null).map((_, index) => (
-          <ProductCard key={index} />
-        ))}
+        <div className="flex flex-col gap-2.5 w-full">
+          {new Array(3).fill(null).map((_, index) => (
+            <ProductCard key={index} />
+          ))}
+        </div>
       </div>
     </section>
   );
