@@ -19,7 +19,7 @@ const Categories = () => {
           <motion.div
             className="box"
             transition={{ type: "spring" }}
-            initial={{ opacity: 1, scale: 0 }}
+            initial={{ opacity: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
           >
             <h2 className="text-xl text-primary font-bold">
@@ -29,7 +29,7 @@ const Categories = () => {
           <motion.div
             className="box"
             transition={{ type: "spring", delay: 0.1 }}
-            initial={{ opacity: 1, scale: 0 }}
+            initial={{ opacity: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
           >
             <p className="text-secondary">
