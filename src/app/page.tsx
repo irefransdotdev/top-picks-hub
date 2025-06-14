@@ -9,10 +9,12 @@ export default function Home() {
         <Header />
       </div>
       <main aria-label="Main Content" tabIndex={-1}>
-        <div className="bg-background px-5 container mx-auto flex justify-between items-center py-5">
-          <Hero />
+        <div className="bg-background">
+          <div className="px-5 container mx-auto flex justify-between items-center py-5">
+            <Hero />
+          </div>
         </div>
-        <div className="bg-white px-5 container mx-auto flex justify-between items-center py-5">
+        <div className="px-5 container mx-auto flex justify-between items-center py-5">
           <Recommendations />
         </div>
       </main>
