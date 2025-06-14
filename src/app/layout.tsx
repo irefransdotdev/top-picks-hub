@@ -25,15 +25,31 @@ export const metadata: Metadata = {
     "beauty products",
   ],
   icons: {
-    icon: "/favicon.ico", // now points to /public/favicon.ico
+    icon: "/favicon.ico",
   },
+
   openGraph: {
-    images: ["/opengraph-image.png"], // points to /public/opengraph-image.png
+    title: "Top Pick Hubs",
+    description:
+      "Discover honest product reviews and handpicked top picks at TopPicksHub. Find the best deals in tech, home, health, fashion, beauty, and more—trusted by smart shoppers worldwide.",
+    url: "https://top-picks-hub-iota.vercel.app/",
+    siteName: "Top Pick Hubs",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Top Pick Hubs Open Graph Image",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
   },
+
   authors: [
     {
       name: "Top Pick Hubs Team",
-      url: "https://toppickshub.com/about",
+      url: "https://top-picks-hub-iota.vercel.app/about",
     },
   ],
   creator: "@toppickshub",
