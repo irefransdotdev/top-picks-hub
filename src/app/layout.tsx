@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: "Top Pick Hubs",
     images: [
       {
-        url: "/opengraph-image.png",
+        url: "https://top-picks-hub-iota.vercel.app/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "Top Pick Hubs Open Graph Image",
