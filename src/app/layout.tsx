@@ -24,10 +24,6 @@ export const metadata: Metadata = {
     "fashion finds",
     "beauty products",
   ],
-  icons: {
-    icon: "/favicon.ico",
-  },
-
   openGraph: {
     title: "Top Pick Hubs",
     description:
