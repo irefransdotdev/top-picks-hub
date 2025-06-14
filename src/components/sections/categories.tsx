@@ -9,7 +9,7 @@ import {
 
 const Categories = () => {
   return (
-    <section className="text-gray-900 w-full">
+    <section className="text-gray-900 w-full py-5">
       <div className="px-4 gap-5 flex flex-col items-center text-center">
         <header>
           <h2 className="text-xl text-primary font-bold">

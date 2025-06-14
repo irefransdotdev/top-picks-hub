@@ -2,7 +2,7 @@ import { Button } from "../ui/button";
 
 const Hero = () => {
   return (
-    <section className=" text-gray-900 py-20" aria-labelledby="hero-heading">
+    <section className=" text-gray-900 py-20">
       <div className="container px-4 gap-5 flex flex-col items-center text-center">
         <header>
           <h2 id="hero-heading" className="text-xl text-primary-foreground">
