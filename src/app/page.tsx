@@ -1,6 +1,7 @@
 import Categories from "@/components/sections/categories";
 import Header from "@/components/sections/header";
 import Hero from "@/components/sections/hero";
+import LatestBlogs from "@/components/sections/latest-blogs";
 import Recommendations from "@/components/sections/recommendations";
 
 export default function Home() {
@@ -21,6 +22,11 @@ export default function Home() {
         <div className="bg-muted">
           <div className="px-5 container mx-auto flex justify-between items-center py-5">
             <Categories />
+          </div>
+        </div>
+        <div className="bg-white">
+          <div className="px-5 container mx-auto flex justify-between items-center py-5">
+            <LatestBlogs />
           </div>
         </div>
       </main>
