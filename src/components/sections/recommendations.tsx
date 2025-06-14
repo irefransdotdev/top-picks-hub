@@ -38,6 +38,7 @@ const topProducts = [
 
 const Recommendations = () => {
   const motion = useMotion();
+
   return (
     <section className="text-gray-900 w-full py-5">
       <div className="px-4 gap-5 flex flex-col items-center text-center">
@@ -46,7 +47,7 @@ const Recommendations = () => {
             className="box"
             transition={{ type: "spring" }}
             initial={{ opacity: 1, scale: 0 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            animate={{ opacity: 1, scale: 1 }}
           >
             <h2 className="text-xl text-primary font-bold">
               Top 3 Recommended Products You Can&#39;t Miss This Month
@@ -56,7 +57,7 @@ const Recommendations = () => {
             className="box"
             transition={{ type: "spring" }}
             initial={{ opacity: 1, scale: 0 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            animate={{ opacity: 1, scale: 1 }}
           >
             <p className="text-secondary">
               Explore our top 3 best-selling and highly-rated products—carefully
