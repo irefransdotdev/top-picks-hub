@@ -8,7 +8,7 @@ const TestimonialFeedback = () => {
   return (
     <section className="w-full container mx-auto">
       <div className="flex flex-col gap-5 lg:gap-10 text-center lg:text-start lg:flex-row">
-        <section className="order-2">
+        <section className="lg:order-2">
           <article>
             <motion.div
               className="box"
@@ -37,7 +37,7 @@ const TestimonialFeedback = () => {
             </motion.div>
           </article>
         </section>
-        <section className="basis-2xl order-1">
+        <section className="lg:basis-2xl lg:order-1">
           <TestimonialForm />
         </section>
       </div>
