@@ -72,7 +72,7 @@ const ContactUsForm = () => {
             key="thank-you-message-contact-us"
           >
             <div className="text-green-600 text-center font-semibold mb-5">
-              Thank you for your testimonial!
+              Thank you for contacting us! We have received your message.
             </div>
           </motion.div>
         )}
