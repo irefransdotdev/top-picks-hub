@@ -14,7 +14,8 @@ const Hero = () => {
             className="box"
             transition={{ type: "spring", delay: 0.1 }}
             initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
           >
             <h2 id="hero-heading" className="text-xl text-primary-foreground">
               Welcome to <span className="font-bold">TopPickHubs</span>
@@ -25,7 +26,8 @@ const Hero = () => {
           className="box"
           transition={{ type: "spring", delay: 0.2 }}
           initial={{ opacity: 0, scale: 0 }}
-          animate={{ opacity: 1, scale: 1 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
         >
           <p className="text-4xl text-primary-foreground leading-8">
             Your Trusted Source for the Best Product Reviews and Buying Guides!
@@ -35,7 +37,8 @@ const Hero = () => {
           className="box"
           transition={{ type: "spring", delay: 0.3 }}
           initial={{ opacity: 0, scale: 0 }}
-          animate={{ opacity: 1, scale: 1 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
         >
           <p className="text-primary-foreground">
             Looking for the best products, honest reviews, and expert
@@ -49,7 +52,8 @@ const Hero = () => {
             className="box"
             transition={{ type: "spring", delay: 0.4 }}
             initial={{ opacity: 0, y: 60 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
           >
             <Button className="cursor-pointer bg-button-primary w-full hover:bg-button-primary/80 hover:text-white/80">
               Browse Top Picks
@@ -59,7 +63,8 @@ const Hero = () => {
             className="box"
             transition={{ type: "spring", delay: 0.5 }}
             initial={{ opacity: 0, y: 60 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
           >
             <Button className="cursor-pointer border border-button-primary bg-transparent w-full hover:bg-button-primary/20 hover:border-button-primary/80 hover:text-white/80">
               Explore Categories
