@@ -69,18 +69,23 @@ const Recommendations = () => {
           </motion.div>
         </header>
         <div className="grid gap-4 grid-cols-1 lg:grid-cols-3 lg:gap-8 w-full h-full lg:h-60">
-          {topProducts.map((topProduct, index) => (
-            <motion.div
-              className="h-full"
-              transition={{ type: "spring" }}
-              initial={{ opacity: 0, y: 61 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              key={index}
-            >
-              <ProductCard topProduct={topProduct} />
-            </motion.div>
-          ))}
+          {topProducts.map((topProduct, index) => {
+            return (
+              <motion.div
+                className="h-full"
+                transition={{
+                  type: "spring",
+                  delay: Number(((index + 1) * 0.1 + 0.1).toFixed(1)),
+                }}
+                initial={{ opacity: 0, y: 61 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                key={index}
+              >
+                <ProductCard topProduct={topProduct} />
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>
