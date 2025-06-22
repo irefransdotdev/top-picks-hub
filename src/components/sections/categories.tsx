@@ -21,6 +21,7 @@ const Categories = () => {
             transition={{ type: "spring" }}
             initial={{ opacity: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
           >
             <h2 className="text-xl text-primary font-bold">
               Shop by Category - Find the Best Products for Every Need
@@ -31,6 +32,7 @@ const Categories = () => {
             transition={{ type: "spring", delay: 0.1 }}
             initial={{ opacity: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
           >
             <p className="text-secondary">
               Browse our top product categories, including tech gadgets, home
@@ -47,6 +49,7 @@ const Categories = () => {
               transition={{ type: "spring", delay: 0.2 }}
               initial={{ opacity: 0, x: -60 }}
               whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
             >
               <motion.div
                 whileHover={{ scale: 1.05 }}
@@ -65,6 +68,7 @@ const Categories = () => {
               transition={{ type: "spring", delay: 0.3 }}
               initial={{ opacity: 0, x: -60 }}
               whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
             >
               <motion.div
                 whileHover={{ scale: 1.05 }}
@@ -86,6 +90,7 @@ const Categories = () => {
               transition={{ type: "spring", delay: 0.4 }}
               initial={{ opacity: 0, x: 60 }}
               whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
             >
               <motion.div
                 whileHover={{ scale: 1.05 }}
@@ -104,6 +109,7 @@ const Categories = () => {
               transition={{ type: "spring", delay: 0.5 }}
               initial={{ opacity: 0, x: 60 }}
               whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
             >
               <motion.div
                 whileHover={{ scale: 1.05 }}
@@ -122,6 +128,7 @@ const Categories = () => {
               transition={{ type: "spring", delay: 0.6 }}
               initial={{ opacity: 0, x: 60 }}
               whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
             >
               <motion.div
                 whileHover={{ scale: 1.05 }}
