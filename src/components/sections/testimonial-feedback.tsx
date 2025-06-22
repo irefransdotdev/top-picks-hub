@@ -14,6 +14,7 @@ const TestimonialFeedback = () => {
             transition={{ type: "spring" }}
             initial={{ opacity: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
           >
             <h2 className="text-xl text-primary font-bold">
               Share Your Experience with TopPicksHub!
@@ -24,6 +25,7 @@ const TestimonialFeedback = () => {
             transition={{ type: "spring", delay: 0.1 }}
             initial={{ opacity: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
           >
             <p className="text-secondary">
               We&#39;d love to hear how TopPicksHub helped you make smarter
