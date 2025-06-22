@@ -30,9 +30,22 @@ const ContactUs = () => {
         >
           <p className="text-secondary">
             We carefully handpick and review products from leading brands to
-            ensure you get only the best value for your money. Our team spends
-            countless hours analyzing product features, reading user reviews,
-            and comparing specifications—so you don&#39;t have to.
+            We’d love to hear from you! Whether you have questions, suggestions,
+            product recommendations, or partnership inquiries—feel free to reach
+            out. At TopPicksHub, your feedback helps us improve our content and
+            serve you better.
+          </p>
+        </motion.div>
+        <motion.div
+          className="box"
+          transition={{ type: "spring", delay: 0.2 }}
+          initial={{ opacity: 0, scale: 0 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+        >
+          <p className="italic text-secondary text-sm">
+            We respect your privacy. Your information will only be used to
+            respond to your inquiry and will never be shared with third parties.
           </p>
         </motion.div>
         <footer className="w-full">
