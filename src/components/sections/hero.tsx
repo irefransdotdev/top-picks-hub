@@ -7,8 +7,8 @@ const Hero = () => {
   const motion = useMotion();
 
   return (
-    <section className=" text-gray-900 py-20">
-      <div className="container px-4 gap-5 flex flex-col items-center text-center">
+    <section className="text-gray-900 py-20 w-full lg:max-w-3xl mx-auto">
+      <div className="px-4 flex flex-col gap-5 text-center lg:text-start">
         <header>
           <motion.div
             className="box"
@@ -47,7 +47,7 @@ const Hero = () => {
             and all in one.
           </p>
         </motion.div>
-        <footer className="flex flex-col w-full gap-2.5">
+        <footer className="flex flex-col lg:flex-row w-full gap-2.5">
           <motion.div
             className="box"
             transition={{ type: "spring", delay: 0.4 }}
