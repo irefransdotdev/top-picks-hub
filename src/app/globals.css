@@ -42,6 +42,7 @@
   --color-button-primary: var(--color-button-primary);
   --color-success: var(--success);
   --color-success-foreground: var(--success-foreground);
+  --color-blue-dark: var(--color-blue-dark);
 }
 
 [data-theme="blue-light"] {
@@ -81,4 +82,5 @@
   --sidebar-border: var(--border);
   --sidebar-ring: var(--ring);
   --color-button-primary: hsl(217, 91%, 60%);
+  --color-blue-dark: hsl(221, 39%, 11%);
 }
