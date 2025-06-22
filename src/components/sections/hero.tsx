@@ -73,7 +73,7 @@ const Hero = () => {
         <section className="flex flex-col lg:flex-row w-full gap-2.5 h-72">
           <div className="flex w-full relative">
             <motion.div
-              transition={{ type: "spring" }}
+              transition={{ type: "spring", delay: 0.6 }}
               initial={{ opacity: 0, scale: 0 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -91,7 +91,7 @@ const Hero = () => {
               />
             </motion.div>
             <motion.div
-              transition={{ type: "spring", delay: 0.1 }}
+              transition={{ type: "spring", delay: 0.7 }}
               initial={{ opacity: 0, scale: 0 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
