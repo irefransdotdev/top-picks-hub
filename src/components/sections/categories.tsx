@@ -13,8 +13,8 @@ import { useMotion } from "../providers/scroll/MotionProvider";
 const Categories = () => {
   const motion = useMotion();
   return (
-    <section className="text-gray-900 w-full py-5">
-      <div className="px-4 gap-5 flex flex-col items-center text-center">
+    <section className="text-gray-900 w-full container mx-auto">
+      <div className="flex flex-col gap-5 text-center lg:text-start">
         <header>
           <motion.div
             className="box"
@@ -41,9 +41,9 @@ const Categories = () => {
             </p>
           </motion.div>
         </header>
-        <div className="grid grid-cols-2 gap-4 w-full text-left">
+        <div className="grid grid-cols-2 gap-4 lg:gap-8 w-full text-left">
           {/* Left column: 2 cards */}
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 lg:gap-8">
             <motion.div
               className="w-full h-full"
               transition={{ type: "spring", delay: 0.2 }}
@@ -84,7 +84,7 @@ const Categories = () => {
             </motion.div>
           </div>
           {/* Right column: 3 cards */}
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 lg:gap-8">
             <motion.div
               className="w-full h-full"
               transition={{ type: "spring", delay: 0.4 }}
