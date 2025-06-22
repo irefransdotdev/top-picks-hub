@@ -68,7 +68,7 @@ const Recommendations = () => {
             </p>
           </motion.div>
         </header>
-        <div className="grid gap-4 grid-cols-1 lg:grid-cols-3 w-full h-full lg:h-60">
+        <div className="grid gap-4 grid-cols-1 lg:grid-cols-3 lg:gap-8 w-full h-full lg:h-60">
           {topProducts.map((topProduct, index) => (
             <motion.div
               className="h-full"
