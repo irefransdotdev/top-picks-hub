@@ -14,7 +14,7 @@ const Categories = () => {
   const motion = useMotion();
   return (
     <section className="text-gray-900 w-full container mx-auto">
-      <div className="flex flex-col gap-5 text-center lg:text-start">
+      <div className="flex flex-col gap-5 lg:gap-10 text-center lg:text-start">
         <header>
           <motion.div
             className="box"
