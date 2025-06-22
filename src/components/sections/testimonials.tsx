@@ -68,7 +68,7 @@ const Testimonials = () => {
             const isMiddle = index === middleIndex;
             return (
               <motion.div
-                className={cn(isMiddle && "scale-110 z-10")}
+                className={cn(isMiddle && "lg:scale-110 lg:z-10")}
                 transition={{
                   type: "spring",
                   delay: Number(((index + 1) * 0.1 + 0.1).toFixed(1)),
