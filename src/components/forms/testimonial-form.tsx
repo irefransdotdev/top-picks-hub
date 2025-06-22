@@ -54,28 +54,29 @@ const TestimonialForm = () => {
   };
   return (
     <Form {...form}>
-      <motion.div layout>
+      <AnimatePresence>
         {submitted && (
-          <AnimatePresence>
-            <motion.div
-              className="box"
-              transition={{ type: "spring", duration: 0.5 }}
-              initial={{ scale: 0, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0, opacity: 0 }}
-            >
-              <div className="text-green-600 text-center font-semibold mb-5">
-                Thank you for your testimonial!
-              </div>
-            </motion.div>
-          </AnimatePresence>
+          <motion.div
+            className="box"
+            transition={{ type: "spring", duration: 0.5 }}
+            initial={{ scale: 0, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            viewport={{ once: true }}
+            key="thank-you-message-testimonial"
+          >
+            <div className="text-green-600 text-center font-semibold mb-5">
+              Thank you for your testimonial!
+            </div>
+          </motion.div>
         )}
         <motion.div
+          key="testimonial-form"
           className="box"
-          transition={{ type: "spring", delay: 0.2 }}
+          transition={{ type: "spring" }}
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 60 }}
+          viewport={{ once: true }}
+          layout
         >
           <form
             onSubmit={form.handleSubmit(onSubmit)}
@@ -167,7 +168,7 @@ const TestimonialForm = () => {
             </motion.div>
           </form>
         </motion.div>
-      </motion.div>
+      </AnimatePresence>
     </Form>
   );
 };
