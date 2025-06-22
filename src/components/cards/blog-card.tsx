@@ -16,9 +16,9 @@ interface BlogCardProps {
 const BlogCard = ({ title, description }: BlogCardProps) => {
   const motion = useMotion();
   return (
-    <motion.div whileHover={{ scale: 1.05 }}>
-      <article className="w-full h-full cursor-pointer  hover:outline hover:outline-secondary rounded-lg">
-        <Card className="border-none shadow-none bg-card h-full">
+    <motion.div whileHover={{ scale: 1.05 }} className="h-full">
+      <article className="w-full h-full cursor-pointer hover:outline hover:outline-secondary rounded-lg">
+        <Card className="border-none shadow-none bg-card h-full flex flex-col justify-between">
           <CardHeader className="font-bold text-xl">
             <CardTitle className="text-xl">{title}</CardTitle>
             <CardDescription className="text-start font-normal text-secondary">

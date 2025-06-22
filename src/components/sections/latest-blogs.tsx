@@ -24,8 +24,8 @@ const latestBlogs = [
 const LatestBlogs = () => {
   const motion = useMotion();
   return (
-    <section className="text-gray-900 w-full py-5">
-      <div className="px-4 gap-5 flex flex-col items-center text-center">
+    <section className="w-full container mx-auto">
+      <div className="flex flex-col gap-5 lg:gap-10 text-center lg:text-start">
         <header>
           <motion.div
             className="box"
@@ -52,28 +52,26 @@ const LatestBlogs = () => {
             </p>
           </motion.div>
         </header>
-        <div className="flex flex-col gap-4 w-full">
-          <div className="flex flex-col gap-4 w-full">
-            {latestBlogs.map((latestBlog, index) => (
-              <motion.div
-                className="box"
-                transition={{
-                  type: "spring",
-                  delay: Number(((index + 1) * 0.1 + 0.1).toFixed(1)),
-                }}
-                initial={{ opacity: 0, scale: 0 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
+        <div className="grid gap-4 grid-cols-1 lg:grid-cols-3 lg:gap-8 w-full h-full lg:h-60">
+          {latestBlogs.map((latestBlog, index) => (
+            <motion.div
+              className="h-full"
+              transition={{
+                type: "spring",
+                delay: Number(((index + 1) * 0.1 + 0.1).toFixed(1)),
+              }}
+              initial={{ opacity: 0, scale: 0 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              key={index}
+            >
+              <BlogCard
                 key={index}
-              >
-                <BlogCard
-                  key={index}
-                  title={latestBlog.title}
-                  description={latestBlog.description}
-                />
-              </motion.div>
-            ))}
-          </div>
+                title={latestBlog.title}
+                description={latestBlog.description}
+              />
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>
