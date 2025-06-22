@@ -65,7 +65,7 @@ const TestimonialForm = () => {
             key="thank-you-message-testimonial"
           >
             <div className="text-green-600 text-center font-semibold mb-5">
-              Thank you for your testimonial!
+              Your testimonial has been submitted! We appreciate your feedback.
             </div>
           </motion.div>
         )}
