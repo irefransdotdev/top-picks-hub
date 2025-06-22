@@ -21,7 +21,7 @@ export default function Home() {
             <Hero />
           </div>
         </div>
-        <div className="px-5 container mx-auto max-w-lg flex justify-between items-center py-5">
+        <div className="px-5 container mx-auto max-w-lg lg:mx-0 lg:max-w-full flex justify-between items-center py-5">
           <Recommendations />
         </div>
         <div className="bg-muted">

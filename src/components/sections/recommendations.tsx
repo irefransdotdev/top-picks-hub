@@ -40,8 +40,8 @@ const Recommendations = () => {
   const motion = useMotion();
 
   return (
-    <section className="text-gray-900 w-full py-5">
-      <div className="px-4 gap-5 flex flex-col items-center text-center">
+    <section className="text-gray-900 w-full container mx-auto">
+      <div className="flex flex-col gap-5 text-center lg:text-start">
         <header>
           <motion.div
             className="box"
@@ -68,10 +68,10 @@ const Recommendations = () => {
             </p>
           </motion.div>
         </header>
-        <div className="flex flex-col gap-4 w-full">
+        <div className="grid gap-4 grid-cols-1 lg:grid-cols-3 w-full h-full lg:h-60">
           {topProducts.map((topProduct, index) => (
             <motion.div
-              className="box"
+              className="h-full"
               transition={{ type: "spring" }}
               initial={{ opacity: 0, y: 61 }}
               whileInView={{ opacity: 1, y: 0 }}

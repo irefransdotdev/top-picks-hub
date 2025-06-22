@@ -22,9 +22,9 @@ interface ProductCardProps {
 const ProductCard = ({ topProduct }: ProductCardProps) => {
   const motion = useMotion();
   return (
-    <motion.div whileHover={{ scale: 1.05 }}>
-      <article className="w-full cursor-pointer">
-        <Card className="border-none shadow-none bg-card">
+    <motion.div whileHover={{ scale: 1.05 }} className="h-full">
+      <article className="w-full cursor-pointer h-full">
+        <Card className="border-none shadow-none bg-card h-full flex flex-col justify-between">
           <CardHeader>
             <CardTitle>
               <h3 className="text-xl font-bold text-primary text-start">
