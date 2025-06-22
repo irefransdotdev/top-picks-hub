@@ -68,8 +68,8 @@ const ContactUsForm = () => {
             transition={{ type: "spring", duration: 0.5 }}
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 0, opacity: 0 }}
-            key="thank-you-message"
+            viewport={{ once: true }}
+            key="thank-you-message-contact-us"
           >
             <div className="text-green-600 text-center font-semibold mb-5">
               Thank you for your testimonial!
@@ -82,7 +82,7 @@ const ContactUsForm = () => {
           transition={{ type: "spring" }}
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 60 }}
+          viewport={{ once: true }}
           layout
         >
           <form
