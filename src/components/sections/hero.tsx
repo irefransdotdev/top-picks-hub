@@ -7,8 +7,8 @@ const Hero = () => {
   const motion = useMotion();
 
   return (
-    <section className="text-gray-900 py-20 w-full lg:max-w-3xl mx-auto">
-      <div className="px-4 flex flex-col gap-5 text-center lg:text-start">
+    <section className="text-gray-900 py-20 w-full container mx-auto">
+      <div className="flex flex-col gap-5 text-center lg:text-start">
         <header>
           <motion.div
             className="box"
