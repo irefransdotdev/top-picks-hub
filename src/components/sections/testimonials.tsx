@@ -34,9 +34,6 @@ const testimonials = [
 const Testimonials = () => {
   const motion = useMotion();
 
-  const middleIndex = Math.floor(testimonials.length / 2);
-  const middleTestimonial = testimonials[middleIndex];
-
   return (
     <section className="w-full container mx-auto">
       <div className="flex flex-col gap-5 lg:gap-10 text-center lg:text-start">
