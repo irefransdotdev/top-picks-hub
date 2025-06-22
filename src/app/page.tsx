@@ -1,3 +1,4 @@
+import AboutUs from "@/components/sections/about-us";
 import Categories from "@/components/sections/categories";
 import Header from "@/components/sections/header";
 import Hero from "@/components/sections/hero";
@@ -41,6 +42,11 @@ export default function Home() {
         <div className="bg-muted">
           <div className="px-5 container mx-auto max-w-lg flex justify-between items-center py-5">
             <Testimonials />
+          </div>
+        </div>
+        <div className="bg-white">
+          <div className="px-5 container mx-auto max-w-lg flex justify-between items-center py-5">
+            <AboutUs />
           </div>
         </div>
         <div className="bg-white">
