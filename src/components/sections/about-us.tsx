@@ -5,53 +5,56 @@ import { useMotion } from "../providers/scroll/MotionProvider";
 const AboutUs = () => {
   const motion = useMotion();
   return (
-    <section className="text-gray-900 w-full py-5">
-      <div className="px-4 gap-5 flex flex-col items-center text-center">
-        <header>
+    <section className="w-full container mx-auto">
+      <div className="flex flex-col gap-5 lg:gap-10 text-center lg:text-start">
+        <article className="space-y-2 lg:space-y-4">
+          <header>
+            <motion.div
+              className="box"
+              transition={{ type: "spring" }}
+              initial={{ opacity: 0, scale: 0 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-xl text-primary font-bold">
+                About TopPicksHub - Your Trusted Source for Product Reviews and
+                Buying Guides
+              </h2>
+            </motion.div>
+          </header>
           <motion.div
             className="box"
-            transition={{ type: "spring" }}
+            transition={{ type: "spring", delay: 0.1 }}
             initial={{ opacity: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-xl text-primary font-bold">
-              About TopPicksHub - Your Trusted Source for Product Reviews and
-              Buying Guides
-            </h2>
+            <p className="text-secondary">
+              At TopPicksHub, we help smart shoppers like you make informed
+              buying decisions by providing unbiased product reviews, top-rated
+              recommendations, and comprehensive buying guides. Whether
+              you&#39;re searching for the best tech gadgets, affordable home
+              essentials, fitness gear, or skincare products, our mission is to
+              simplify your shopping experience with trusted, well-researched
+              content.
+            </p>
           </motion.div>
-        </header>
-        <motion.div
-          className="box"
-          transition={{ type: "spring", delay: 0.1 }}
-          initial={{ opacity: 0, scale: 0 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-        >
-          <p className="text-secondary">
-            At TopPicksHub, we help smart shoppers like you make informed buying
-            decisions by providing unbiased product reviews, top-rated
-            recommendations, and comprehensive buying guides. Whether you&#39;re
-            searching for the best tech gadgets, affordable home essentials,
-            fitness gear, or skincare products, our mission is to simplify your
-            shopping experience with trusted, well-researched content.
-          </p>
-        </motion.div>
-        <motion.div
-          className="box"
-          transition={{ type: "spring", delay: 0.1 }}
-          initial={{ opacity: 0, scale: 0 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-        >
-          <p className="text-secondary">
-            We carefully handpick and review products from leading brands to
-            ensure you get only the best value for your money. Our team spends
-            countless hours analyzing product features, reading user reviews,
-            and comparing specifications—so you don&#39;t have to.
-          </p>
-        </motion.div>
-        <article className="px-4 gap-5 flex flex-col items-center text-center">
+          <motion.div
+            className="box"
+            transition={{ type: "spring", delay: 0.1 }}
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+          >
+            <p className="text-secondary">
+              We carefully handpick and review products from leading brands to
+              ensure you get only the best value for your money. Our team spends
+              countless hours analyzing product features, reading user reviews,
+              and comparing specifications—so you don&#39;t have to.
+            </p>
+          </motion.div>
+        </article>
+        <article className="space-y-2 lg:space-y-4 flex flex-col justify-center items-center lg:items-start">
           <motion.div
             className="box"
             transition={{ type: "spring" }}
@@ -61,7 +64,7 @@ const AboutUs = () => {
           >
             <h3 className="font-bold text-base">Why Trust TopPicksHub?</h3>
           </motion.div>
-          <ul className="list-disc">
+          <ul className="list-disc pl-2 lg:pl-4">
             <motion.li
               className="text-secondary text-left"
               transition={{ type: "spring", delay: 0.1 }}

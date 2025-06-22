@@ -40,7 +40,7 @@ export default function Home() {
           </div>
         </div>
         <div className="bg-white">
-          <div className="px-5 container mx-auto max-w-lg flex justify-between items-center py-5">
+          <div className="px-5 container mx-auto max-w-lg lg:mx-0 lg:max-w-full flex justify-between items-center py-5 lg:py-10">
             <AboutUs />
           </div>
         </div>
