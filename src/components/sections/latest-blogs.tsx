@@ -56,7 +56,7 @@ const LatestBlogs = () => {
               <motion.div
                 className="box"
                 transition={{
-                  type: "keyframes",
+                  type: "spring",
                   delay: Number(((index + 1) * 0.1 + 0.1).toFixed(1)),
                 }}
                 initial={{ opacity: 0, scale: 0 }}
