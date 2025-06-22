@@ -47,7 +47,8 @@ const Recommendations = () => {
             className="box"
             transition={{ type: "spring" }}
             initial={{ opacity: 1, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
           >
             <h2 className="text-xl text-primary font-bold">
               Top 3 Recommended Products You Can&#39;t Miss This Month
@@ -57,7 +58,8 @@ const Recommendations = () => {
             className="box"
             transition={{ type: "spring" }}
             initial={{ opacity: 1, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
           >
             <p className="text-secondary">
               Explore our top 3 best-selling and highly-rated products—carefully
@@ -73,6 +75,7 @@ const Recommendations = () => {
               transition={{ type: "spring" }}
               initial={{ opacity: 0, y: 61 }}
               whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               key={index}
             >
               <ProductCard topProduct={topProduct} />
