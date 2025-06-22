@@ -65,7 +65,7 @@ const Testimonials = () => {
             </p>
           </motion.div>
         </header>
-        <div className="grid gap-4 grid-cols-1 lg:grid-cols-3 lg:gap-14 w-full h-full lg:h-50">
+        <div className="grid gap-4 grid-cols-1 lg:grid-cols-3 lg:gap-10 w-full h-full">
           {testimonials.map((testimonial, index) => {
             const middleIndex = Math.floor(testimonials.length / 2);
             const isMiddle = index === middleIndex;
