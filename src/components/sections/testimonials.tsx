@@ -1,5 +1,6 @@
 "use client";
 
+import { cn } from "@/lib/utils";
 import TestimonialCard from "../cards/testimonial-card";
 import { useMotion } from "../providers/scroll/MotionProvider";
 
@@ -32,9 +33,13 @@ const testimonials = [
 
 const Testimonials = () => {
   const motion = useMotion();
+
+  const middleIndex = Math.floor(testimonials.length / 2);
+  const middleTestimonial = testimonials[middleIndex];
+
   return (
-    <section className="text-gray-900 w-full py-5">
-      <div className="px-4 gap-5 flex flex-col items-center text-center">
+    <section className="w-full container mx-auto">
+      <div className="flex flex-col gap-5 lg:gap-10 text-center lg:text-start">
         <header>
           <motion.div
             className="box"
@@ -60,22 +65,30 @@ const Testimonials = () => {
             </p>
           </motion.div>
         </header>
-        <div className="flex flex-col gap-4 w-full">
-          {testimonials.map((testimonial, index) => (
-            <motion.div
-              className="box"
-              transition={{
-                type: "spring",
-                delay: Number(((index + 1) * 0.1 + 0.1).toFixed(1)),
-              }}
-              initial={{ opacity: 0, scale: 0 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              key={index}
-              viewport={{ once: true }}
-            >
-              <TestimonialCard key={index} testimonial={testimonial} />
-            </motion.div>
-          ))}
+        <div className="grid gap-4 grid-cols-1 lg:grid-cols-3 lg:gap-14 w-full h-full lg:h-50">
+          {testimonials.map((testimonial, index) => {
+            const middleIndex = Math.floor(testimonials.length / 2);
+            const isMiddle = index === middleIndex;
+            return (
+              <motion.div
+                className={cn(isMiddle && "scale-110 z-10")}
+                transition={{
+                  type: "spring",
+                  delay: Number(((index + 1) * 0.1 + 0.1).toFixed(1)),
+                }}
+                initial={{ opacity: 0, scale: 0 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                key={index}
+                viewport={{ once: true }}
+              >
+                <TestimonialCard
+                  key={index}
+                  testimonial={testimonial}
+                  isMiddle={isMiddle}
+                />
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>

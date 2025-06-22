@@ -12,18 +12,22 @@ interface TestimonialCardProps {
     title: string;
     message: string;
   };
+  isMiddle: boolean;
 }
 
-const TestimonialCard = ({ testimonial }: TestimonialCardProps) => {
+const TestimonialCard = ({ testimonial, isMiddle }: TestimonialCardProps) => {
   const { firstName, lastName, profession, title, message } = testimonial;
   const motion = useMotion();
   return (
-    <motion.div whileHover={{ scale: 1.05 }}>
-      <article className="w-full cursor-pointer  hover:outline hover:outline-secondary rounded-lg">
-        <Card className="border-none shadow-none bg-white flex flex-col justify-center">
+    <motion.div
+      whileHover={{ scale: isMiddle ? 1.03 : 1.05 }}
+      className="h-full"
+    >
+      <article className="w-full cursor-pointer  hover:outline hover:outline-secondary rounded-lg h-full">
+        <Card className="border-none shadow-none bg-white flex flex-col justify-center h-full">
           <CardHeader className="pb-0">
             <CardTitle className="text-xl">
-              <div className="flex flex-row gap-2 items-center">
+              <div className="flex flex-row gap-2 lg:gap-4 items-center">
                 <Avatar>
                   <AvatarImage
                     src="https://github.com/shadcn.png"
