@@ -31,7 +31,7 @@ const AboutUs = () => {
           <p className="text-secondary">
             At TopPicksHub, we help smart shoppers like you make informed buying
             decisions by providing unbiased product reviews, top-rated
-            recommendations, and comprehensive buying guides. Whether you're
+            recommendations, and comprehensive buying guides. Whether you&#39;re
             searching for the best tech gadgets, affordable home essentials,
             fitness gear, or skincare products, our mission is to simplify your
             shopping experience with trusted, well-researched content.
