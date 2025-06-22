@@ -29,11 +29,10 @@ const ContactUs = () => {
           viewport={{ once: true }}
         >
           <p className="text-secondary">
-            We carefully handpick and review products from leading brands to
-            We’d love to hear from you! Whether you have questions, suggestions,
-            product recommendations, or partnership inquiries—feel free to reach
-            out. At TopPicksHub, your feedback helps us improve our content and
-            serve you better.
+            We&#39;d love to hear from you! Whether you have questions,
+            suggestions, product recommendations, or partnership inquiries—feel
+            free to reach out. At TopPicksHub, your feedback helps us improve
+            our content and serve you better.
           </p>
         </motion.div>
         <motion.div
